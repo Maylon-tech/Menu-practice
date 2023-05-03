@@ -72,11 +72,10 @@ body {
 }
 .header .navbar li {
     position: relative;
-    padding: 5px;
-    margin: 0px 9px;
+    padding: 15px;
 }
 .header .navbar li:hover {
-    background-color: rgb(172, 169, 169); 
+    background-color: rgba(96, 91, 91, 0.648); 
     border-radius: 6px;
 }
 .header .navbar a {
@@ -84,9 +83,9 @@ body {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 12px;
-    margin: 0px 7px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+    transition: .4s ease;
 }
 
 /*  SUBMENU  */
@@ -94,13 +93,14 @@ body {
 .header .navbar .submenu {    
     display: none;
     position: absolute;
-    top: 32px;
-    left: 0px;
+    top: 38px;
+    left: 0%;
+    width: 180px;
     min-width: 110%;
     height: 180px;
     background-color: #252525;
 }
-.header .navbar li:hover > .submenu {
+.header .navbar li:hover .submenu {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -108,11 +108,12 @@ body {
 }
 
 .header .navbar .submenu li {
-    position: relative;
-    width: 95%;
+    background-color: rgba(51, 51, 50, 0.713);
+    width: 100%;
+    text-align: center;
 }
 .header .navbar .submenu li a {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 
